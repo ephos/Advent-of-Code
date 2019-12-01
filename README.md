@@ -16,6 +16,12 @@ aocdl -session-cookie 0000000000000000000000000000000000000000000000 -year 2015 
 
 Some of this is so I can learn a new language, _namely Go_.
 
+For the Go puzzles you can compile and run the resulting binary or just run the following...
+
+```bash
+go run ./main.go ./part_1.go ./part_2.go
+```
+
 ### PowerShell
 
 **NOTE:** I run Linux primarily, so if you clone this down on Windows just know I am working entirely with PowerShell _(Not Windows PowerShell)_ and the paths may look funny.
