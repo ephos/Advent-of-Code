@@ -1,4 +1,3 @@
-# Made the computer a function for part 2 for sanity.
 function Invoke-IntCodeComputer {
     [CmdletBinding()]
     param (
@@ -7,7 +6,7 @@ function Invoke-IntCodeComputer {
         [ValidateRange(1,100)]
         [int]
         $Noun,
-        # Parameter help description
+        # Verb
         [Parameter(Mandatory=$true)]
         [ValidateRange(1,100)]
         [int]
