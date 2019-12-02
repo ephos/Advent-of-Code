@@ -2,13 +2,6 @@
 $opCode = [System.Collections.Generic.List[int]]::new()
 $opCode.AddRange($puzzleInput)
 
-<#
-To do this, before running the program,
-    replace position 1 with the value 12
-and...
-    replace position 2 with the value 2.
-What value is left at position 0 after the program halts?
-#>
 $opCode[1] = 12
 $opCode[2] = 2
 
@@ -32,4 +25,3 @@ $opCode[2] = 2
     }
 }
 Write-Output -InputObject $opCode[0]
-# Write-Output -InputObject ($opCode -Join ',')

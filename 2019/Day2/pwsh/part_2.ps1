@@ -41,7 +41,6 @@ function Invoke-IntCodeComputer {
             }
         }
         Write-Output -InputObject $opCode[0]
-        # Write-Output -InputObject ($opCode -Join ',')
     }
 }
 
