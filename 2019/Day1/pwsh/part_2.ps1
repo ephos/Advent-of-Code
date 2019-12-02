@@ -1,8 +1,8 @@
-$input = Get-Content -Path "./input.txt"
+$puzzleInput = Get-Content -Path "./input.txt"
 
 $totalFuel = 0
 
-foreach ($module in $input) {
+foreach ($module in $puzzleInput) {
 
     $mass = $module
     while ($mass -ge 0) {
