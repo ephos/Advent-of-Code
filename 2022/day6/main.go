@@ -29,7 +29,9 @@ func main() {
 
 	signal := string(puzzle)
 
-	for i, sb := range signal {
+	var chk bool
+
+	for i, _ := range signal {
 		if i >= 3 {
 
 			first := string(signal[i])
@@ -38,12 +40,13 @@ func main() {
 			fourth := string(signal[(i - 3)])
 
 			tmpSlice := []string{fourth, third, second, first}
-			dupCheck(string(sb), tmpSlice)
-			//	if !dupCheck(first, tmpSlice) {
-			//		fmt.Println("Part 1:", tmpSlice, "in iteration:", i)
-			//	}
+			chk = dupCheck(first, tmpSlice)
 		} else {
 			continue
+		}
+
+		if chk == false {
+			return
 		}
 	}
 }
